@@ -1,0 +1,170 @@
+
+   
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+     font-family: 'Gill Sans', sans-serif;   
+    background: rgb(136, 127, 127);
+  
+}
+
+.main-content{
+min-height: 1000px;
+margin:20px auto;
+display: grid;
+grid-template-columns: 300px 700px;
+width: 90%;
+
+}
+
+.left-section{
+    grid-column: span 1;
+    background-color: rgb(231, 100, 12);
+    
+}
+
+.right-section{
+  grid-column: span 1 / span 2;
+  background-color: rgb(243, 243, 243);
+
+}
+.left-content{
+    padding:1rem;
+}
+.profile-image{
+    width: 60%;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+.name{ 
+  text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:0.8rem;
+    letter-spacing: .02px;
+    color: azure;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: rgb(199, 218, 31);
+}
+hr{
+   border: 1px dotted rgb(254, 255, 254);
+  
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: aliceblue;
+}
+.social-media{
+    display: flex;
+   list-style-type: none;
+   margin:0 15;
+   padding: auto;
+    justify-content: space-around;
+}
+.contact-detail{
+    list-style-type: none;
+    padding:10px;
+}
+.social-media i{
+    color: rgb(251, 184, 38);
+}
+.code i{
+    padding:6;
+    color: rgb(255, 208, 0);
+}
+.code b{
+    color: white;
+    font-weight: 200;
+    font-size: 0.75rem;
+}
+.skills h3{
+    font-size:1.3rem;
+    text-align: center;
+    font-weight: 0.65rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: rgb(255, 255, 254);
+}
+.skill-name h4{
+    color: rgb(234, 238, 6);
+    font-weight: 0.65rem;
+    text-transform: uppercase;
+    margin-left:5px;
+}
+.progress-bar{
+    border:1px white solid;
+    height:4px;
+   margin: 10px 5px;
+   border-radius:20px;
+   background-color: white;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.paragraph{
+    padding: 10px;
+    padding-right: 7rem;
+    letter-spacing: 1px;
+}
+table, th, td {
+    padding-right: 90px;
+    text-align: center;
+  }
+.edu-content{
+    margin:0 0 10px 0;
+    
+}
+.right-title{
+    margin-bottom:15px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.right-title p{
+    margin-right: 1150px;
+}
+.experience h4{
+    padding-left: 10px;
+}
+.ex-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top:-80px;
+    margin-bottom: 50px;
+}
+
+/* responsive css */
+@media screen and (max-width:673px) {
+    .main-content{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    
+}
